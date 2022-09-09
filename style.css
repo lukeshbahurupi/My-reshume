@@ -1,0 +1,109 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color:#5d535e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.main-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    margin:auto;
+}
+section{
+    display: block;
+}
+.left-section{
+background-color:#9a9eaa;
+grid-column: span 1;
+}
+.right-section{
+background-color:#dfe066;
+grid-column: span 1 / span 2;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    margin: auto;
+    display:block;
+    /* object-fit: cover; */
+    width:80%;
+    /* border: 5px solid white; */
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    display: inline-block;
+}
+i{
+    color: #f5f5f5;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding:1rem 0.5rem 1rem 0.5rem;
+}
+.skill-item{
+    margin-bottom: 10px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.right-main-content{
+    padding:2rem 3rem 2rem 3rem;
+}
+.right-title{
+    font-size:1.2rem;
+    font-weight: 700px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 673px){
+    .main-content{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-section{
+        grid-column: 1 / 1;
+        }
+    .right-section{
+        grid-column: 1 / 1;
+        }
+    
+}
